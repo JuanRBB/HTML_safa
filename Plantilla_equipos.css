@@ -1,0 +1,105 @@
+
+.contenedor_plantilla{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.info_equipo{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 4%;
+
+}
+
+.img_equipo{
+    width: 25%;
+    border-right: 3px solid;
+    margin-top: 2%;
+}
+
+.informacion_general{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 4%;
+}
+
+.informacion_general  h2{
+    font-size: 40px;
+}
+
+.informacion_general  h4{
+    font-size: 15px;
+    margin-top: -0.1em;
+}
+
+
+.plantilla{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 1% ;
+    margin-left: 4%;
+}
+
+.plantilla > h3 {
+    font-size: 25px;
+    color: white;
+    border-bottom: 1px solid #ffffff;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.plantilla > h3 span {
+    background-color: #212121 ;
+    padding-right:10px;
+}
+
+.jugadores{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.jugador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    margin-right: 1%;
+}
+
+.jugador > img{
+    margin-top: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/*FOOTER PAGINA*/
+
+.footer_plantilla{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    background-color: #272727;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.footer_plantilla b {
+    font-size: 18px;
+}
+
+.footer_plantilla h2 {
+    font-size: 10px;
+}
+
+
+

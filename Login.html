@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="General.css">
+    <link rel="stylesheet" type="text/css" href="Login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+</head>
+<body>
+  <div class="header_login">
+      <a href="#" class="subheader_login"><img src="Imagenes/Logo_SafaBets.png" class="imagen_login"></a>
+  </div>
+  <div class="contendor">
+       <section class="form-login">
+          <h5>Formulario Login</h5>
+           <form method="post">
+            {% csrf_token %}
+          <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
+          <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
+          <input class="buttons" type="submit" name="" value="Ingresar">
+          <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
+       </section>
+  </div>
+  <div class="footer">
+      <div class="colum_footer">
+          <a class="botones_footer_titulo botones_footer_titulo_color"><b>Contacto</b></a>
+          <a class="botones_footer botones_footer_color">Sevilla</a>
+          <a class="botones_footer botones_footer_color">954 37 05 50</a>
+          <a class="botones_footer botones_footer_color">C\ Calatrava, 38, 41002</a>
+
+      </div>
+      <div class="colum_footer">
+          <a class="botones_footer_titulo botones_footer_titulo_color"><b>Sobre nosotros</b></a>
+          <a class="botones_footer botones_footer_color">Políticas de privacidad</a>
+          <a class="botones_footer botones_footer_color">Preguntas frecuentes</a>
+          <a class="botones_footer botones_footer_color">&copy;2023</a>
+      </div>
+      <div class="colum_footer">
+          <ul class="socials">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+      </div>
+</div>
+
+</body>
+</html>
