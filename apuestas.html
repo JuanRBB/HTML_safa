@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Eventos</title>
+    <title>Apuestas</title>
     <link rel="stylesheet" type="text/css" href="General.css">
-    <link rel="stylesheet" type="text/css" href="Eventos.css">
+    <link rel="stylesheet" type="text/css" href="apuestas.css">
     <script src="https://kit.fontawesome.com/52e676a3ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -12,29 +12,30 @@
 <div class="cabecera">
     <a href="inicio.html" class=""><img src="Imagenes/Logo_SafaBets.png" class="imagen_header" ></a>
     <input type="text" class="buscador" placeholder=" Buscar equipo" required class="buscador">
-    <div class="registro">
-        <a href="login.html" class="botones botones_color">REGISTRO</a>
-        <div>|</div>
-        <a href="" class="botones botones_color"><i class="fa-solid fa-user"></i>CUENTA</a>
+    <div class="menu_profile">
+        <label for="menu_profile"><i class="fa-regular fa-bars"></i></label>
     </div>
-</div>
-
-<div class="contenedor_eventos">
-    <h3><span>Jornada X</span></h3>
-    <div class="partido">
-        <div class="equipo_local"><h4>Equipo local</h4></div>
-        <div class="resultado_hora">
-            <h5>hora</h5>
-            <h6>X</h6>
+    <input type="checkbox" id="menu_profile">
+    <div class="contendor_menu">
+        <div class="cont_menu">
+            <nav>
+                <div class="imagen_usuario"><img src="Imagenes/default.jpeg"></div>
+                <h3>Nombre</h3>
+                <h4>Tu saldo actual es de: XXXX€</h4>
+                <a href="#"><h4>Extraer</h4></a>
+                <a href="#"><h4>Apostar</h4></a>
+                <a href="#" class="log_out">Log out<i class="fa-regular fa-arrow-right-from-bracket"></i></a>
+            </nav>
         </div>
-        <div class="equipo_visitante">Equipo visitante</div>
-        <div class="botones botones_color"><a href="">Apostar</a> </div>
     </div>
+</div>
 
+<div class="contenido_apuestas">
 
 </div>
 
-<div class="footer_p">
+
+<div class="footer">
       <div class="colum_footer">
           <a class="botones_footer_titulo botones_footer_titulo_color"><b>Contacto</b></a>
           <a class="botones_footer botones_footer_color">Sevilla</a>
@@ -57,6 +58,5 @@
           </ul>
       </div>
 </div>
-
 </body>
 </html>

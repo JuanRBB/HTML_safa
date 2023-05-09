@@ -26,7 +26,8 @@ body {
 }
 
 .botones:hover{
-    background-color: #000201;
+    background-color: #ffffff;
+    color: #008f39;
     transition-duration: 0.5s;
     cursor: pointer;
 }
@@ -86,6 +87,151 @@ body {
     margin-right: 4px;
 }
 
+
+
+/*MENU USUARIO*/
+
+.cabecera > li{
+    width: 25%;
+}
+
+.menu_profile i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: right;
+}
+
+#menu_profile{
+    display: none;
+}
+
+.contendor_menu{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transition: all 500ms ease;
+    background-color: #444444;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#menu_profile:checked ~ .contendor_menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont_menu{
+    max-width: 300px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+.cont_menu nav{
+    transform: translateY(15%);
+}
+
+.imagen_usuario{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_usuario img{
+    border-radius: 50%;
+    width: 40%;
+    margin-left: 36%;
+}
+
+.cont_menu h3{
+    margin-left: 40%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont_menu h4{
+    padding: 4%;
+    color: white;
+    border-bottom: 1px solid black;
+
+}
+
+
+.cont_menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 4%;
+    transition: all 400ms ease;
+}
+
+.log_out{
+    display: block;
+    text-decoration: none;
+    color: red;
+    padding: 4%;
+    border-bottom: 1px solid black;
+    transition: all 400ms ease;
+}
+
+.log_out i{
+    color: red;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/*INGRESO*/
+
+.ingreso_emergente{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(79,79,79, 0.7);
+    z-index: 1;
+    visibility: hidden;
+}
+
+.ingreso{
+    width: 450px;
+    position: relative;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ingreso input{
+    border: solid #4F4F4FB2;
+    padding: 1% 10%;
+    border-radius: 5px;
+}
+
+.ingreso label{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.boton_ingreso{
+    margin-top: 1%;
+}
+
+#close_emergente:checked~.ingreso{
+    visibility: visible;
+    opacity: 1;
+}
+
+
 /*ESTILO FOOTER*/
 .footer{
     display: flex;
@@ -98,7 +244,6 @@ body {
     align-items: center;
     background-color: #272727;
     margin-top: 1%;
-    margin-bottom: 2%;
 }
 
 .colum_footer{

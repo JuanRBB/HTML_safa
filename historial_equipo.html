@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Usuario</title>
+    <title>Historial_apuesta</title>
     <link rel="stylesheet" type="text/css" href="General.css">
+    <link rel="stylesheet" type="text/css" href="apuestas.css">
     <script src="https://kit.fontawesome.com/52e676a3ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -22,33 +23,43 @@
                 <h3>Nombre</h3>
                 <h4>Tu saldo actual es de: XXXX€</h4>
                 <a href="#"><h4>Extraer</h4></a>
-                <a href="#" id="open_ingreso"><h4>Ingresar</h4></a>
+                <a href="#"><h4>Apostar</h4></a>
                 <a href="#" class="log_out">Log out<i class="fa-regular fa-arrow-right-from-bracket"></i></a>
             </nav>
         </div>
     </div>
-
-    <div id="ingreso_id" class="ingreso_emergente">
-        <div class="ingreso">
-            <label for="close_emergente"><i class="fa-solid fa-xmark"></i></label>
-            <form id="formIngreso">
-                <h2>Ingrese el número de IBAN:</h2>
-                <input type="text" placeholder="IBAN">
-                <h2>Ingrese la cuantía</h2>
-                <input type="text">
-                <div class="boton_ingreso">
-                    <button type="button" id="close_emergente" class="botones botones_color">Ingresar</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <script src="ingreso.js"></script>
-
-
-
-
 </div>
+
+<div class="contenido_historial_equipo">
+<label for="equipo_historial">Elige un equipo: </label>
+
+<select id="equipo_historial" name="equipo_historial" onchange="eleccion_equipo(this.value)">
+  <option value="Barcelona">F.C. Barcelona</option>
+  <option value="Real Madrid">Real Madrid C.F.</option>
+  <option value="Atletico Madrid">Atletico Madrid</option>
+  <option value="Real Sociedad">Real Sociedad</option>
+  <option value="Real Betis">Real Betis</option>
+  <option value="Villareal">Villareal</option>
+  <option value="Athletic">Athletic de Bilbao</option>
+  <option value="Rayo Vallecano">Rayo Vallecano</option>
+  <option value="Osasuna">Osasuna</option>
+  <option value="Celta">Celta</option>
+  <option value="Mallorca">Mallorca</option>
+  <option value="Girona">Girona</option>
+  <option value="Getafe">Getafe</option>
+  <option value="Sevilla">Sevilla</option>
+  <option value="Cádiz">Cádiz</option>
+  <option value="Valladolid">Valladolid</option>
+  <option value="Espanyol">Espanyol</option>
+  <option value="Valencia">Valencia</option>
+  <option value="Almería">Almería</option>
+  <option value="Elche">Elche</option>
+</select>
+<input type="submit" value="Filtrar">
+</div>
+
+<script src="historial_equipos.js"></script>
+
 
 
 <div class="footer">
@@ -74,7 +85,6 @@
           </ul>
       </div>
 </div>
-
 
 </body>
 </html>
