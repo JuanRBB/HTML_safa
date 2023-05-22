@@ -21,7 +21,7 @@
 }
 
 
-/*BANNER IZQ*/
+/*BANNER IZQ
 .position_left{
     position: absolute;
     top: 12%;
@@ -51,7 +51,7 @@
     }
 }
 
-/*BANNER DERECHO*/
+BANNER DERECHO
 .position_right{
     position: absolute;
     top: 12%;
@@ -91,6 +91,72 @@
     height: 100%;
     object-fit: cover;
     align-items: center;
+} */
+
+.contenedor_inicio{
+    display: flex;
+    flex-direction: row;
+}
+
+.banner_izq{
+    width: 30%;
+}
+
+.banner_derecho{
+    width: 30%;
+}
+
+/*CARRUSEL CENTRAL*/
+.carrousel{
+    width: auto;
+}
+
+.conteCarrousel{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.itemCarrousel{
+    position: relative;
+    max-width: 100%;
+    min-width:100% ;
+    height: 100%;
+}
+
+.itemCarrousel a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
 }
 
 
